@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+  /* text-align: center; */
+  background: rgb(245, 204, 236);
+  color: black;
+}
+
+h2 {
+  color: rgb(238, 9, 9);
+}
+h3,
+a {
+  color: rgb(255, 0, 149);
+}
+.books {
+  width: 80vw;
+  max-width: 1170px;
+  gap: 2rem;
+  margin: 5rem auto;
+  display: grid;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .books {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.imagePart {
+  background-color: whitesmoke;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
